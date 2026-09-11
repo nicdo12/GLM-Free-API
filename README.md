@@ -83,8 +83,8 @@ Text-only models report `"modality": "text->text"` / `"input_modalities": ["text
 # 1. Clone
 git clone https://github.com/izaart95-jpg/GLM-Free-API/ zai-api && cd zai-api
 
-# 2. Initialize the Go module (repo ships without go.mod by design)
-go mod init zai-api && go mod tidy
+# 2. Download the dependencies declared by the included Go module files
+go mod download
 
 # 3. Optional: playwright deps (only for the token collector, when deps are missing)
 npx playwright install-deps
