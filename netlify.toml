@@ -1,0 +1,3 @@
+[build]
+command = "go build -o zai-api -trimpath -gcflags=\"all=-l=4\" -ldflags=\"-s -w\" ."
+
